@@ -5,13 +5,22 @@
 <body>
 <h1>Elliott's Photos</h1>
 
-<h2 class="Heading1">September 2021</h2>
-<img src="Compressed Photos/September/Oratory.jpg" width=600 height=400>
-<p>This is an image of the Oratoire Saint-Joseph on the night of September 25</p>
+<div class="tab">
+    <button class="tablinks" onclick="openPage(event,'September 2021')">September 2021</button>
+</div>
 
-<hr>
-
-<h2 class="Heading2">October 2021</h2>
+<div id="September 2021" class=tabcontent>
+    <h2 class="Heading1">September 2021</h2>
+    <img src="Compressed Photos/September/Oratory.jpg" width=600 height=400>
+    <br>
+    <a href="Compressed Photos/September/Oratory.jpg" target="blank">Enlarge image</a>
+    <p>Image of the Oratoire Saint-Joseph on the night of September 25</p>
+</div>
 
 </body>
 </html>
+
+<!-- 
+Add tabs sorting by month and by theme 
+Figure out exactly how the image layout should be
+-->
