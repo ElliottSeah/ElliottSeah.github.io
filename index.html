@@ -1,41 +1,53 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="buttons.js"></script>
+    <script src="buttons.js" defer></script>
 </head>
 <body>
 <h1 class="title">Elliott's Photos</h1>
 
-
 <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#september2021">September 2021</a>
-    <a href="#october2021">October 2021</a>
+    <button onclick="openPage('home')">Home</button>
+    <button onclick="openPage('september2021')">September 2021</button>
+    <button onclick="openPage('october2021')">October 2021</button>
   </div>
 
-<div id="home">
-  <a class="active" onclick="openPage(home)"></a>
-  <p>This is the home page</p>
+<div class="tabcontent" id="home">
+  <p>Welcome to my photos! This is a website that I decided to code myself (with help, of course, thank you Vincent) to showcase and share some of my best pictures. <br> Since I did code it myself, it may not be the most aesthetic thing out there, but the fact remains that I am proud of it.</p>
 </div>
 
-<div id="about">
-  <a class="active" onclick="openPage(about)"></a>
-  <p>This is the about page</p>
-</div>
-
-<div id="september2021">
-  <a class="active" onclick="openPage(september2021)"></a>
+<div class="tabcontent" id="september2021">
+  <p>These photos were taken in September, when I decided to get back into photography. Therefore, since I was rusty at both photography and Lightroom and since I only went on two trips, the shots aren't the greatest.</p>
   <div class="container">
     
     <div class="mySlides">
-      <div class="numbertext">1 / 2</div>
+      <div class="numbertext">1 / 6</div>
         <img src="Compressed Photos/September/Oratory.jpg" style="width:100%">
     </div>
   
     <div class="mySlides">
-      <div class="numbertext">2 / 2</div>
+      <div class="numbertext">2 / 6</div>
+        <img src="Compressed Photos/September/Downtown.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
         <img src="Compressed Photos/September/Flower.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="Compressed Photos/September/Montreal.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="Compressed Photos/September/Old Port.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="Compressed Photos/September/Bird.jpg" style="width:100%">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -47,19 +59,32 @@
 
     <div class="row">
       <div class="column">
-        <img class="demo cursor" src="Compressed Photos/September/Oratory.jpg" style="width:100%" onclick="currentSlide(1)" alt="Oratoire Saint-Joseph">
+        <img class="demo cursor" src="Compressed Photos/September/Oratory.jpg" style="width:100%" onclick="currentSlide(1)" alt="Oratoire Saint-Joseph <br> The ISO was rather high and I oversaturated the light in postproduction, but the angle is good">
       </div>
       <div class="column">
-        <img class="demo cursor" src="Compressed Photos/September/Flower.jpg" style="width:100%" onclick="currentSlide(2)" alt="Flower">
+        <img class="demo cursor" src="Compressed Photos/September/Downtown.jpg" style="width:100%" onclick="currentSlide(2)" alt="Downtown Montreal <br> This image is also very saturated as I did not have my monopod this trip">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Compressed Photos/September/Flower.jpg" style="width:100%" onclick="currentSlide(2)" alt="Flower <br> I really like the raindrops">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Compressed Photos/September/Montreal.jpg" style="width:100%" onclick="currentSlide(2)" alt="Montreal from Pont Jacques-Cartier <br> I had to photoshop an antenna out of this one, really proud of that">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Compressed Photos/September/Old Port.jpg" style="width:100%" onclick="currentSlide(2)" alt="Montreal's Old Port <br> Also a good shot by my standards">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Compressed Photos/September/Bird.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bird <br> A Great Blue Heron to be precise">
       </div>
     </div>
   </div>
 </div>
 
-<div id="about">
-  <a class="active" onclick="openPage(october2021)"></a>
-  <p>October 2021</p>
+
+<div class="tabcontent" id="october2021">
+  <p>This is the October 2021 page</p>
 </div>
+
 
 </body>
 </html>

@@ -1,21 +1,15 @@
 function openPage(pageName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-  
-    document.getElementById(pageName).style.display = "block";
-
+  console.log("Run")
+  var pages = document.getElementsByClassName("tabcontent");
+  console.log(pages)
+  for(var i=0;i<pages.length;i++) {
+    pages[i].style.display = "none";
+    console.log("Loop")
   }
+  document.getElementById(pageName).style.display = "block"
+}
 
-document.getElementById("defaultOpen").click();
-
+openPage("home")
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -44,5 +38,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-  console.log("Testing")
 }
